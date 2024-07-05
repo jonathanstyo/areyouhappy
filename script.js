@@ -117,10 +117,38 @@ const jokesReceh = [
 
 const gifs = [
     "https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif",
-    "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif",
-    "https://media.giphy.com/media/l0HlOvJ7yaacpuSas/giphy.gif",
-    "https://media.giphy.com/media/5ntdy5Ban1dIY/giphy.gif",
-    "https://media.giphy.com/media/1dIo0dnkhD4s3WiCHa/giphy.gif"
+    "https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif",
+    "https://media.giphy.com/media/LnT41OQdHks12Dd3FJ/giphy.gif",
+    "https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif",
+    "https://media.giphy.com/media/3oEjHCWdU7F4dXgtNC/giphy.gif",
+    "https://media.giphy.com/media/y4zVwTiDTqVCQ/giphy.gif",
+    "https://media.giphy.com/media/ZZ1eZZFqFfa0Y/giphy.gif",
+    "https://media.giphy.com/media/1dIoQEU4ZyALZiS4/giphy.gif",
+    "https://media.giphy.com/media/3o7TKNYg4O5N6snhYQ/giphy.gif",
+    "https://media.giphy.com/media/10dU7AN7xsi1I4/giphy.gif",
+    "https://media.giphy.com/media/3o7aD0MhmpDaLHwNVe/giphy.gif",
+    "https://media.giphy.com/media/JJguEFv3X6BqU/giphy.gif",
+    "https://media.giphy.com/media/KDNkycnvG5UME/giphy.gif",
+    "https://media.giphy.com/media/10LKovKon8DENq/giphy.gif",
+    "https://media.giphy.com/media/6brH8HEPrRiA4/giphy.gif"
+];
+
+const gifDescriptions = [
+    "Kucing mengintip, siapa yang sedang dia intip ya?",
+    "Anjing menari dengan riangnya, ayo ikut menari!",
+    "Kelinci lucu sedang menikmati wortelnya, sangat imut!",
+    "Kucing bermain dengan bola, lihat betapa asiknya dia!",
+    "Anjing bermain air, sepertinya sangat menyenangkan!",
+    "Koala menguap, waktu tidur sudah tiba.",
+    "Kucing tertidur nyenyak, selamat tidur kucing kecil!",
+    "Anjing berpakaian kostum, sangat menggemaskan!",
+    "Hamster berlari di rodanya, tidak pernah lelah!",
+    "Kucing mengejar laser, cepat sekali gerakannya!",
+    "Anjing dengan kacamata, sangat stylish!",
+    "Kucing melompat tinggi, seperti atlet olimpiade!",
+    "Kura-kura menari, siapa sangka kura-kura bisa menari!",
+    "Anjing berguling-guling, sangat lucu!",
+    "Kucing meringkuk nyaman, hangat sekali!"
 ];
 
 document.getElementById('yesButton').addEventListener('click', function() {
@@ -140,8 +168,10 @@ document.getElementById('jokesButton').addEventListener('click', function() {
 });
 
 document.getElementById('gifButton').addEventListener('click', function() {
-    const randomGif = gifs[Math.floor(Math.random() * gifs.length)];
-    showGif(randomGif);
+    const randomIndex = Math.floor(Math.random() * gifs.length);
+    const randomGif = gifs[randomIndex];
+    const randomDescription = gifDescriptions[randomIndex];
+    showGif(randomGif, randomDescription);
 });
 
 document.getElementById('closeButton').addEventListener('click', function() {
@@ -153,8 +183,8 @@ function showMessage(message) {
     document.getElementById('popup').style.display = 'flex';
 }
 
-function showGif(gifUrl) {
-    const gifElement = `<img id="gif" src="${gifUrl}" alt="Gif Lucu">`;
+function showGif(gifUrl, description) {
+    const gifElement = `<img id="gif" src="${gifUrl}" alt="Gif Lucu"><p>${description}</p>`;
     document.getElementById('message').innerHTML = gifElement;
     document.getElementById('popup').style.display = 'flex';
 }

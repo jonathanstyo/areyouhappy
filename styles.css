@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Permanent Marker', cursive;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,26 +29,43 @@ button {
     margin: 0 10px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    border-radius: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Permanent Marker', cursive;
+    background-color: #ffdd59;
+    color: #1e272e;
 }
 
 button:hover {
-    background-color: #ddd;
+    background-color: #ffd32a;
+    transform: scale(1.1);
 }
 
-#quoteButton, #jokesButton, #gifButton {
-    font-size: 2em;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+#quoteButton {
+    background-color: #ff5e57;
+    color: #ffffff;
 }
 
-#quoteButton:hover, #jokesButton:hover, #gifButton:hover {
-    background-color: #ddd;
+#quoteButton:hover {
+    background-color: #ff3f34;
+}
+
+#jokesButton {
+    background-color: #05c46b;
+    color: #ffffff;
+}
+
+#jokesButton:hover {
+    background-color: #0be881;
+}
+
+#gifButton {
+    background-color: #1e90ff;
+    color: #ffffff;
+}
+
+#gifButton:hover {
+    background-color: #0fbcf9;
 }
 
 #popup {
@@ -95,17 +112,17 @@ button:hover {
     }
 
     .container {
-        margin-top: 450px;
+        margin-top: 200px;
     }
 
     button {
-        font-size: 1em;
+        font-size: 1.5em;
         padding: 5px 10px;
         margin: 5px;
     }
 
     #quoteButton, #jokesButton, #gifButton {
-        font-size: 1em;
+        font-size: 1.5em;
         padding: 5px 10px;
         margin: 5px;
     }
