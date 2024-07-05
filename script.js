@@ -76,7 +76,7 @@ const jokesReceh = [
     "Ayam apa yang nyebelin?\n Ayamnya sudah habis, nasinya masih banyak.",
     "Apa beda antara semut dan orang?\n Orang bisa kesemutan, tetapi semut nggak bisa keorangan.",
     "Kalau hitam dibilang bersih, kalau putih dibilang kotor?\n Papan tulis.",
-    "Kuman apa yang paling bersih?\nJawab: Kumandi pakai sabun.",
+    "Kuman apa yang paling bersih?\n Kumandi pakai sabun.",
     "Sepeda apa yang tidak bisa dicat?\n Sepeda hilang.",
     "Tahu nggak kenapa donat tengahnya bolong?\n Karena yang utuh cinta ayah ke bunda.",
     "Uang 100 ribu kalau dilempar jadi apa hayo?\n Jadi rebutan, Pak!",
