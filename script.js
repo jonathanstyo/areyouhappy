@@ -116,39 +116,23 @@ const jokesReceh = [
 ];
 
 const gifs = [
-    "https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif",
-    "https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif",
-    "https://media.giphy.com/media/LnT41OQdHks12Dd3FJ/giphy.gif",
-    "https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif",
-    "https://media.giphy.com/media/3oEjHCWdU7F4dXgtNC/giphy.gif",
-    "https://media.giphy.com/media/y4zVwTiDTqVCQ/giphy.gif",
-    "https://media.giphy.com/media/ZZ1eZZFqFfa0Y/giphy.gif",
-    "https://media.giphy.com/media/1dIoQEU4ZyALZiS4/giphy.gif",
-    "https://media.giphy.com/media/3o7TKNYg4O5N6snhYQ/giphy.gif",
-    "https://media.giphy.com/media/10dU7AN7xsi1I4/giphy.gif",
-    "https://media.giphy.com/media/3o7aD0MhmpDaLHwNVe/giphy.gif",
-    "https://media.giphy.com/media/JJguEFv3X6BqU/giphy.gif",
-    "https://media.giphy.com/media/KDNkycnvG5UME/giphy.gif",
-    "https://media.giphy.com/media/10LKovKon8DENq/giphy.gif",
-    "https://media.giphy.com/media/6brH8HEPrRiA4/giphy.gif"
+    "https://media2.giphy.com/media/yFQ0ywscgobJK/giphy.gif?cid=6c09b952jsxzqyn5drcw9wi63gujyxslb69zp7gvwsc9a9ld&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g",
+    "https://media1.giphy.com/media/lJNoBCvQYp7nq/giphy.gif?cid=6c09b952yd5bsnndvk7t0y098jmv1l0ggn78ooslmmokt5ct&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g",
+    "https://media3.giphy.com/media/uELtzAhhqpRKg/giphy.gif?cid=6c09b9520qrx49r42xppp8q606oqldb959ksz8ln1eh3j6zd&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g",
+    "https://media1.giphy.com/media/co9IXVaipZ0Yg/giphy.gif?cid=6c09b952owo7m9zuowcwo9qfzk9db64fnyft3gufqc9n0k4w&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g",
+    "https://media3.giphy.com/media/Z5xk7fGO5FjjTElnpT/giphy.gif?cid=6c09b9526g1e7ex5slgfph98xo8jbw6sezkvu574fqwjsv4r&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g",
+    "https://media1.giphy.com/media/sgmVqNXFMgDjDV1FhY/giphy.gif?cid=6c09b9524lh6ir55nw3f2gznb63ztvbtzoubihotaipqdczi&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g",
+    "https://media2.giphy.com/media/3NtY188QaxDdC/giphy.gif?cid=6c09b952ju9lgmf2x8fy351q212nhsrruyo0h1x1niq5vg09&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g"
 ];
 
 const gifDescriptions = [
-    "Kucing mengintip, siapa yang sedang dia intip ya?",
-    "Anjing menari dengan riangnya, ayo ikut menari!",
-    "Kelinci lucu sedang menikmati wortelnya, sangat imut!",
-    "Kucing bermain dengan bola, lihat betapa asiknya dia!",
-    "Anjing bermain air, sepertinya sangat menyenangkan!",
-    "Koala menguap, waktu tidur sudah tiba.",
-    "Kucing tertidur nyenyak, selamat tidur kucing kecil!",
-    "Anjing berpakaian kostum, sangat menggemaskan!",
-    "Hamster berlari di rodanya, tidak pernah lelah!",
-    "Kucing mengejar laser, cepat sekali gerakannya!",
-    "Anjing dengan kacamata, sangat stylish!",
-    "Kucing melompat tinggi, seperti atlet olimpiade!",
-    "Kura-kura menari, siapa sangka kura-kura bisa menari!",
-    "Anjing berguling-guling, sangat lucu!",
-    "Kucing meringkuk nyaman, hangat sekali!"
+    "POV: Abis makan siang tapi belum ngopi",
+    "POV: Dikejar deadline",
+    "POV: Jam 8 pagi udah di kantor tapi belum dandan",
+    "POV: Nungguin jam makan siang",
+    "POV: Lagi bengong tiba-tiba diajak meeting",
+    "POV: Jam 17.00 WIB",
+    "POV: Tanggal gajian"
 ];
 
 document.getElementById('yesButton').addEventListener('click', function() {
