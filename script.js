@@ -60,13 +60,12 @@ const randomQuotes = [
     "The unexamined life is not worth living, - Socrates",
     "Be the change that you wish to see in the world, - Mahatma Gandhi",
     "In three words I can sum up everything I've learned about life: it goes on, - Robert Frost",
-
 ];
 
 const jokesReceh = [
     "Huruf apa yang paling kedinginan, Pak?\n Huruf B. Karena berada di tengah-tengah AC.",
     "Buah, buah apa yang paling receh?\n Buah ha ha ha ha ha.",
-    "Telor apa yang sangar? Telor asin, soalnya ada tatonya.",
+    "Telor apa yang sangar?\n Telor asin, soalnya ada tatonya.",
     "Hewan apa yang hobi telat ke sekolah?\n Kaki seribu. Soalnya kelamaan pakai sepatunya.",
     "Hewan apa yang cuma terdiri dari dua huruf?\n U dan G (udang)",
     "Gendang apa yang nggak bisa dipukul?\n Gendang telinga, Pak.",
@@ -116,6 +115,14 @@ const jokesReceh = [
     "Ikan apa yang suka berhenti?\n Ikan pause."
 ];
 
+const gifs = [
+    "https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif",
+    "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif",
+    "https://media.giphy.com/media/l0HlOvJ7yaacpuSas/giphy.gif",
+    "https://media.giphy.com/media/5ntdy5Ban1dIY/giphy.gif",
+    "https://media.giphy.com/media/1dIo0dnkhD4s3WiCHa/giphy.gif"
+];
+
 document.getElementById('yesButton').addEventListener('click', function() {
     showMessage(yesMessages[Math.floor(Math.random() * yesMessages.length)]);
 });
@@ -132,11 +139,22 @@ document.getElementById('jokesButton').addEventListener('click', function() {
     showMessage(jokesReceh[Math.floor(Math.random() * jokesReceh.length)]);
 });
 
+document.getElementById('gifButton').addEventListener('click', function() {
+    const randomGif = gifs[Math.floor(Math.random() * gifs.length)];
+    showGif(randomGif);
+});
+
 document.getElementById('closeButton').addEventListener('click', function() {
     document.getElementById('popup').style.display = 'none';
 });
 
 function showMessage(message) {
     document.getElementById('message').innerText = message;
+    document.getElementById('popup').style.display = 'flex';
+}
+
+function showGif(gifUrl) {
+    const gifElement = `<img id="gif" src="${gifUrl}" alt="Gif Lucu">`;
+    document.getElementById('message').innerHTML = gifElement;
     document.getElementById('popup').style.display = 'flex';
 }
